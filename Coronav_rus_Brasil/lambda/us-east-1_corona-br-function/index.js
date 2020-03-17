@@ -114,7 +114,7 @@ const LocalizationInterceptor = {
     const attributes = handlerInput.attributesManager.getRequestAttributes();
     attributes.t = function translate(...args) {
       return localizationClient.localize(...args);
-    }
+    };
   }
 };
 
@@ -310,7 +310,7 @@ const hiinData = {
   translation: {
     SKILL_NAME: 'अंतरिक्ष फ़ैक्ट्स',
   },
-}
+};
 
 const itData = {
   translation: {
