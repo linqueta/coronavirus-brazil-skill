@@ -23,6 +23,6 @@ const LocalizationInterceptor = {
   }
 };
 
-module.exports = {
+module.exports = [
   LocalizationInterceptor
-}
+]
