@@ -21,7 +21,7 @@ then
 fi
 
 install_dependencies() {
-    npm install --prefix "$1" >/dev/null 2>&1 
+    npm install --only=prod --prefix "$1" >/dev/null 2>&1
     return $?
 }
 
