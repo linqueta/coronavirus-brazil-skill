@@ -1,5 +1,4 @@
 const Alexa = require('ask-sdk-core');
-const i18n = require('i18next');
 const request = require('request');
 
 const GetNewFactHandler = {
@@ -87,40 +86,10 @@ const ErrorHandler = {
   },
 };
 
-const languageStrings = require('internationalization')
+const interceptors = require('./interceptors');
 
-const LocalizationInterceptor = {
-  process(handlerInput) {
-    const localizationClient = i18n.init({
-      lng: handlerInput.requestEnvelope.request.locale,
-      resources: languageStrings,
-      returnObjects: true
-    });
-    // Creates a localize function to support arguments.
-    localizationClient.localize = function localize() {
-      // gets arguments through and passes them to
-      // i18next using sprintf to replace string placeholders
-      // with arguments.
-      const args = arguments;
-      const value = i18n.t(...args);
-      // If an array is used then a random value is selected
-      if (Array.isArray(value)) {
-        return value[Math.floor(Math.random() * value.length)];
-      }
-      return value;
-    };
-    // this gets the request attributes and save the localize function inside
-    // it to be used in a handler by calling requestAttributes.t(STRING_ID, [args...])
-    const attributes = handlerInput.attributesManager.getRequestAttributes();
-    attributes.t = function translate(...args) {
-      return localizationClient.localize(...args);
-    };
-  }
-};
-
-const skillBuilder = Alexa.SkillBuilders.custom();
-
-exports.handler = skillBuilder
+exports.handler = Alexa.SkillBuilders
+  .custom()
   .addRequestHandlers(
     GetNewFactHandler,
     HelpHandler,
@@ -128,7 +97,9 @@ exports.handler = skillBuilder
     FallbackHandler,
     SessionEndedRequestHandler,
   )
-  .addRequestInterceptors(LocalizationInterceptor)
+  .addRequestInterceptors(
+    interceptors.LocalizationInterceptor,
+  )
   .addErrorHandlers(ErrorHandler)
   .withCustomUserAgent('sample/basic-fact/v2')
   .lambda();
