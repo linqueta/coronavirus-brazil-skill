@@ -1,0 +1,55 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "coronavírus brasil",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "RegionCaseNumberIntent",
+          "slots": [
+            {
+              "name": "region",
+              "type": "BrazilianRegions"
+            }
+          ],
+          "samples": [
+            "quantos casos tiveram em {region}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "BR",
+              "name": {
+                "value": "Brasil",
+                "synonyms": [
+                  "BR",
+                  "Brazil"
+                ]
+              }
+            }
+          ],
+          "name": "BrazilianRegions"
+        }
+      ]
+    }
+  },
+  "version": "1"
+}
