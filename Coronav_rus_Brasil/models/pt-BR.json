@@ -20,7 +20,7 @@
           "samples": []
         },
         {
-          "name": "RegionCaseNumberIntent",
+          "name": "CasesByRegionIntent",
           "slots": [
             {
               "name": "region",
@@ -28,7 +28,7 @@
             }
           ],
           "samples": [
-            "quantos casos tiveram em {region}"
+            "quantos casos tiveram no {region}"
           ]
         }
       ],
@@ -36,6 +36,251 @@
         {
           "name": "BrazilianRegions",
           "values": [
+            {
+              "id": "DF",
+              "name": {
+                "value": "Distrito Federal",
+                "synonyms": [
+                  "DF"
+                ]
+              }
+            },
+            {
+              "id": "TO",
+              "name": {
+                "value": "Tocantins",
+                "synonyms": [
+                  "TO"
+                ]
+              }
+            },
+            {
+              "id": "SE",
+              "name": {
+                "value": "Sergipe",
+                "synonyms": [
+                  "SE"
+                ]
+              }
+            },
+            {
+              "id": "SP",
+              "name": {
+                "value": "São Paulo",
+                "synonyms": [
+                  "Sampa",
+                  "SP"
+                ]
+              }
+            },
+            {
+              "id": "SC",
+              "name": {
+                "value": "Santa Catarina",
+                "synonyms": [
+                  "SC"
+                ]
+              }
+            },
+            {
+              "id": "RR",
+              "name": {
+                "value": "Roraima",
+                "synonyms": [
+                  "RR"
+                ]
+              }
+            },
+            {
+              "id": "RO",
+              "name": {
+                "value": "Rondônia",
+                "synonyms": [
+                  "RO"
+                ]
+              }
+            },
+            {
+              "id": "RS",
+              "name": {
+                "value": "Rio Grande do Sul",
+                "synonyms": [
+                  "RS"
+                ]
+              }
+            },
+            {
+              "id": "RN",
+              "name": {
+                "value": "Rio Grande do Norte",
+                "synonyms": [
+                  "RN"
+                ]
+              }
+            },
+            {
+              "id": "RJ",
+              "name": {
+                "value": "Rio de Janeiro",
+                "synonyms": [
+                  "errejota",
+                  "RJ"
+                ]
+              }
+            },
+            {
+              "id": "PI",
+              "name": {
+                "value": "Piauí",
+                "synonyms": [
+                  "PI"
+                ]
+              }
+            },
+            {
+              "id": "PE",
+              "name": {
+                "value": "Pernambuco",
+                "synonyms": [
+                  "PE"
+                ]
+              }
+            },
+            {
+              "id": "PR",
+              "name": {
+                "value": "Paraná",
+                "synonyms": [
+                  "PR"
+                ]
+              }
+            },
+            {
+              "id": "PB",
+              "name": {
+                "value": "Paraíba",
+                "synonyms": [
+                  "PB"
+                ]
+              }
+            },
+            {
+              "id": "PA",
+              "name": {
+                "value": "Pará",
+                "synonyms": [
+                  "PA"
+                ]
+              }
+            },
+            {
+              "id": "MG",
+              "name": {
+                "value": "Minas Gerais",
+                "synonyms": [
+                  "MG"
+                ]
+              }
+            },
+            {
+              "id": "MS",
+              "name": {
+                "value": "Mato Grosso do Sul",
+                "synonyms": [
+                  "MS"
+                ]
+              }
+            },
+            {
+              "id": "MT",
+              "name": {
+                "value": "Mato Grosso",
+                "synonyms": [
+                  "MT"
+                ]
+              }
+            },
+            {
+              "id": "MA",
+              "name": {
+                "value": "Maranhão",
+                "synonyms": [
+                  "MA"
+                ]
+              }
+            },
+            {
+              "id": "GO",
+              "name": {
+                "value": "Goiás",
+                "synonyms": [
+                  "GO"
+                ]
+              }
+            },
+            {
+              "id": "ES",
+              "name": {
+                "value": "Espírito Santo",
+                "synonyms": [
+                  "ES"
+                ]
+              }
+            },
+            {
+              "id": "CE",
+              "name": {
+                "value": "Ceará",
+                "synonyms": [
+                  "CE"
+                ]
+              }
+            },
+            {
+              "id": "BA",
+              "name": {
+                "value": "Bahia",
+                "synonyms": [
+                  "BA"
+                ]
+              }
+            },
+            {
+              "id": "AM",
+              "name": {
+                "value": "Amazonas",
+                "synonyms": [
+                  "AM"
+                ]
+              }
+            },
+            {
+              "id": "AP",
+              "name": {
+                "value": "Amapá",
+                "synonyms": [
+                  "AP"
+                ]
+              }
+            },
+            {
+              "id": "AL",
+              "name": {
+                "value": "Alagoas",
+                "synonyms": [
+                  "AL"
+                ]
+              }
+            },
+            {
+              "id": "AC",
+              "name": {
+                "value": "Acre",
+                "synonyms": [
+                  "AC"
+                ]
+              }
+            },
             {
               "id": "BR",
               "name": {

@@ -1,4 +1,5 @@
 const Alexa = require('ask-sdk-core');
+const services = require('./service');
 
 const LaunchRequestHandler = {
   canHandle(handlerInput) {
@@ -9,6 +10,27 @@ const LaunchRequestHandler = {
     return handlerInput.responseBuilder
       .speak(requestAttributes.t('WELCOME_MESSAGE'))
       .reprompt(requestAttributes.t('WELCOME_REPROMPT_MESSAGE'))
+      .getResponse();
+  },
+};
+
+const CasesByRegionIntentHandler = {
+  canHandle(handlerInput) {
+    return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+      && Alexa.getIntentName(handlerInput.requestEnvelope) === 'CasesByRegionIntent';
+  },
+  handle(handlerInput) {
+    // const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
+
+    region = Alexa.getSlotValue(handlerInput.requestEnvelope, 'region');
+    slot = Alexa.getSlot(handlerInput.requestEnvelope, 'region');
+    console.log(region)
+    console.log(slot)
+    console.log(slot.resolutions.resolutionsPerAuthority[0])
+    console.log(slot.resolutions.resolutionsPerAuthority[0].values[0].value.id)
+
+    return handlerInput.responseBuilder
+      .speak(services.casesByRegion())
       .getResponse();
   },
 };
@@ -87,6 +109,7 @@ const ErrorHandler = {
 module.exports = {
   request: [
     LaunchRequestHandler,
+    CasesByRegionIntentHandler,
     HelpHandler,
     ExitHandler,
     FallbackHandler,

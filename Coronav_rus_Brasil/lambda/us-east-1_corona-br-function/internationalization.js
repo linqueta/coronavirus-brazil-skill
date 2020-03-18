@@ -5,7 +5,7 @@ const fallback = `Hmmm, não sei nada sobre isso, ${options}`
 module.exports = {
   'pt-BR': {
     translation: {
-      WELCOME_MESSAGE: `Bem vindo ao ${skillNameSpeakable}, aqui ${options}`,
+      WELCOME_MESSAGE: `Bem vindo`, // ao ${skillNameSpeakable}, aqui ${options}`,
       WELCOME_REPROMPT_MESSAGE: options,
       HELP_MESSAGE: options,
       FALLBACK_MESSAGE: fallback,
