@@ -9,3 +9,4 @@
 ### Fonts
 
 * [2020-03-18](https://g1.globo.com/bemestar/coronavirus/noticia/2020/03/18/casos-de-coronavirus-no-brasil-em-18-de-marco.ghtml)
+* [2020-03-18](https://g1.globo.com/bemestar/coronavirus/noticia/2020/03/18/brasil-tem-428-casos-confirmados-de-novo-coronavirus-diz-ministerio-da-saude.ghtml)
