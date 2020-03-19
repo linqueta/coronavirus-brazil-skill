@@ -20,17 +20,16 @@ const CasesByRegionIntentHandler = {
       && Alexa.getIntentName(handlerInput.requestEnvelope) === 'CasesByRegionIntent';
   },
   handle(handlerInput) {
-    // const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
-
-    region = Alexa.getSlotValue(handlerInput.requestEnvelope, 'region');
-    slot = Alexa.getSlot(handlerInput.requestEnvelope, 'region');
-    console.log(region)
-    console.log(slot)
-    console.log(slot.resolutions.resolutionsPerAuthority[0])
-    console.log(slot.resolutions.resolutionsPerAuthority[0].values[0].value.id)
+    const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
+    region = Alexa.getSlot(handlerInput.requestEnvelope, 'region')
+      .resolutions
+      .resolutionsPerAuthority[0]
+      .values[0]
+      .value
 
     return handlerInput.responseBuilder
-      .speak(services.casesByRegion())
+      .speak(services.casesByRegion(region.id, region.name))
+      .reprompt(requestAttributes.t('CASES_REPROMPT_MESSAGE'))
       .getResponse();
   },
 };

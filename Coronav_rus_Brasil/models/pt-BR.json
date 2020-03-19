@@ -13,7 +13,9 @@
         },
         {
           "name": "AMAZON.StopIntent",
-          "samples": []
+          "samples": [
+            "não"
+          ]
         },
         {
           "name": "AMAZON.NavigateHomeIntent",
@@ -39,8 +41,9 @@
             {
               "id": "DF",
               "name": {
-                "value": "Distrito Federal",
+                "value": "no Distrito Federal",
                 "synonyms": [
+                  "Distrito Federal",
                   "DF"
                 ]
               }
@@ -48,8 +51,9 @@
             {
               "id": "TO",
               "name": {
-                "value": "Tocantins",
+                "value": "em Tocantins",
                 "synonyms": [
+                  "Tocantins",
                   "TO"
                 ]
               }
@@ -57,8 +61,9 @@
             {
               "id": "SE",
               "name": {
-                "value": "Sergipe",
+                "value": "em Sergipe",
                 "synonyms": [
+                  "Sergipe",
                   "SE"
                 ]
               }
@@ -66,8 +71,9 @@
             {
               "id": "SP",
               "name": {
-                "value": "São Paulo",
+                "value": "em São Paulo",
                 "synonyms": [
+                  "São Paulo",
                   "Sampa",
                   "SP"
                 ]
@@ -76,8 +82,9 @@
             {
               "id": "SC",
               "name": {
-                "value": "Santa Catarina",
+                "value": "em Santa Catarina",
                 "synonyms": [
+                  "Santa Catarina",
                   "SC"
                 ]
               }
@@ -85,8 +92,9 @@
             {
               "id": "RR",
               "name": {
-                "value": "Roraima",
+                "value": "em Roraima",
                 "synonyms": [
+                  "Roraima",
                   "RR"
                 ]
               }
@@ -94,8 +102,9 @@
             {
               "id": "RO",
               "name": {
-                "value": "Rondônia",
+                "value": "em Rondônia",
                 "synonyms": [
+                  "Rondônia",
                   "RO"
                 ]
               }
@@ -103,8 +112,9 @@
             {
               "id": "RS",
               "name": {
-                "value": "Rio Grande do Sul",
+                "value": "no Rio Grande do Sul",
                 "synonyms": [
+                  "Rio Grande do Sul",
                   "RS"
                 ]
               }
@@ -112,8 +122,9 @@
             {
               "id": "RN",
               "name": {
-                "value": "Rio Grande do Norte",
+                "value": "no Rio Grande do Norte",
                 "synonyms": [
+                  "Rio Grande do Norte",
                   "RN"
                 ]
               }
@@ -121,8 +132,9 @@
             {
               "id": "RJ",
               "name": {
-                "value": "Rio de Janeiro",
+                "value": "no Rio de Janeiro",
                 "synonyms": [
+                  "Rio de Janeiro",
                   "errejota",
                   "RJ"
                 ]
@@ -131,8 +143,9 @@
             {
               "id": "PI",
               "name": {
-                "value": "Piauí",
+                "value": "no Piauí",
                 "synonyms": [
+                  "Piauí",
                   "PI"
                 ]
               }
@@ -140,8 +153,9 @@
             {
               "id": "PE",
               "name": {
-                "value": "Pernambuco",
+                "value": "em Pernambuco",
                 "synonyms": [
+                  "Pernambuco",
                   "PE"
                 ]
               }
@@ -149,8 +163,9 @@
             {
               "id": "PR",
               "name": {
-                "value": "Paraná",
+                "value": "no Paraná",
                 "synonyms": [
+                  "Paraná",
                   "PR"
                 ]
               }
@@ -158,8 +173,9 @@
             {
               "id": "PB",
               "name": {
-                "value": "Paraíba",
+                "value": "na Paraíba",
                 "synonyms": [
+                  "Paraíba",
                   "PB"
                 ]
               }
@@ -167,8 +183,9 @@
             {
               "id": "PA",
               "name": {
-                "value": "Pará",
+                "value": "no Pará",
                 "synonyms": [
+                  "Pará",
                   "PA"
                 ]
               }
@@ -176,8 +193,9 @@
             {
               "id": "MG",
               "name": {
-                "value": "Minas Gerais",
+                "value": "em Minas Gerais",
                 "synonyms": [
+                  "Minas Gerais",
                   "MG"
                 ]
               }
@@ -185,8 +203,9 @@
             {
               "id": "MS",
               "name": {
-                "value": "Mato Grosso do Sul",
+                "value": "no Mato Grosso do Sul",
                 "synonyms": [
+                  "Mato Grosso do Sul",
                   "MS"
                 ]
               }
@@ -194,8 +213,9 @@
             {
               "id": "MT",
               "name": {
-                "value": "Mato Grosso",
+                "value": "em Mato Grosso",
                 "synonyms": [
+                  "Mato Grosso",
                   "MT"
                 ]
               }
@@ -203,8 +223,9 @@
             {
               "id": "MA",
               "name": {
-                "value": "Maranhão",
+                "value": "no Maranhão",
                 "synonyms": [
+                  "Maranhão",
                   "MA"
                 ]
               }
@@ -212,8 +233,9 @@
             {
               "id": "GO",
               "name": {
-                "value": "Goiás",
+                "value": "em Goiás",
                 "synonyms": [
+                  "Goiás",
                   "GO"
                 ]
               }
@@ -221,8 +243,9 @@
             {
               "id": "ES",
               "name": {
-                "value": "Espírito Santo",
+                "value": "no Espírito Santo",
                 "synonyms": [
+                  "Espírito Santo",
                   "ES"
                 ]
               }
@@ -230,8 +253,9 @@
             {
               "id": "CE",
               "name": {
-                "value": "Ceará",
+                "value": "no Ceará",
                 "synonyms": [
+                  "Ceará",
                   "CE"
                 ]
               }
@@ -239,8 +263,9 @@
             {
               "id": "BA",
               "name": {
-                "value": "Bahia",
+                "value": "na Bahia",
                 "synonyms": [
+                  "Bahia",
                   "BA"
                 ]
               }
@@ -248,8 +273,9 @@
             {
               "id": "AM",
               "name": {
-                "value": "Amazonas",
+                "value": "em Amazonas",
                 "synonyms": [
+                  "Amazonas",
                   "AM"
                 ]
               }
@@ -257,8 +283,9 @@
             {
               "id": "AP",
               "name": {
-                "value": "Amapá",
+                "value": "no Amapá",
                 "synonyms": [
+                  "Amapá",
                   "AP"
                 ]
               }
@@ -266,8 +293,9 @@
             {
               "id": "AL",
               "name": {
-                "value": "Alagoas",
+                "value": "em Alagoas",
                 "synonyms": [
+                  "Alagoas",
                   "AL"
                 ]
               }
@@ -275,8 +303,9 @@
             {
               "id": "AC",
               "name": {
-                "value": "Acre",
+                "value": "no Acre",
                 "synonyms": [
+                  "Acre",
                   "AC"
                 ]
               }
@@ -284,8 +313,9 @@
             {
               "id": "BR",
               "name": {
-                "value": "Brasil",
+                "value": "no Brasil",
                 "synonyms": [
+                  "Brasil",
                   "BR",
                   "Brazil"
                 ]
