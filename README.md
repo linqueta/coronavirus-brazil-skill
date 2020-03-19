@@ -3,6 +3,8 @@
 ### Available content:
 
 * Alexa, abrir Coronavírus Brasil
+* Alexa, quantos casos aconteceram em São Paulo
+* Alexa, quantos casos aconteceram no Brasil
 
 [skill_page]: https://github.com/linqueta/coronavirus-brazil-skill
 
